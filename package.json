@@ -1,0 +1,25 @@
+{
+  "name": "github-organization-members",
+  "version": "1.0.0",
+  "description": "Returns the public members of the user supplied organistation listed on Github.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moduate/github-organization-members.git"
+  },
+  "keywords": [
+    "Github",
+    "Organisations",
+    "Public",
+    "Members"
+  ],
+  "author": "Jason-Cooke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moduate/github-organization-members/issues"
+  },
+  "homepage": "https://github.com/moduate/github-organization-members#readme"
+}
