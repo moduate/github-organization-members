@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/moduate/github-organization-members/issues"
   },
-  "homepage": "https://github.com/moduate/github-organization-members#readme"
+  "homepage": "https://github.com/moduate/github-organization-members#readme",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  }
 }
