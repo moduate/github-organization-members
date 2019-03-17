@@ -5,3 +5,5 @@ exports.getOrganization = function(orgName) {
     .then(res => res.json())
     .then(json => console.log(json))
 }
+
+exports.getOrganization = exports.getOrganisation;
