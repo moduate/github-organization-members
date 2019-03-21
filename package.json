@@ -4,7 +4,7 @@
   "description": "Returns the public members of the user supplied organistation listed on Github.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
