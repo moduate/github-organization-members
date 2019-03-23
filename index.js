@@ -9,14 +9,14 @@ exports.getOrganisation = function(orgName) {
 
 exports.getOrganization = exports.getOrganisation;
 
-exports.getPublicUsersFromOrg = async function(orgName) {
+exports.getPublicUsersFromOrg = async function(orgName, cb) {
   const org = await exports.getOrganisation(orgName);
   try {
     const publicMembersUrl = org.public_members_url.replace(/{.*}/g, '');
     return fetch(publicMembersUrl)
       .then(res => res.json())
-      .then(json => json);
-  } catch(e) {
-    return {error: e};
+      .then(json => cb(null, json));
+  } catch(error) {
+    return cb(error, null);
   }
 }
