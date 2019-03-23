@@ -1,4 +1,4 @@
-## 1.1.1 (Mar 24, 2019)
+## 1.1.2 (Mar 24, 2019)
 
 * Updated function to accept a callback
 
