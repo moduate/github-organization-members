@@ -1,3 +1,7 @@
+## 1.1.1 (Mar 24, 2019)
+
+* Updated function to accept a callback
+
 ## 1.1.0 (Mar 19, 2019)
 
 ### New Feature
