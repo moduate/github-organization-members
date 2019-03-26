@@ -4,7 +4,8 @@
   "description": "Returns the public members of the user supplied organistation listed on Github.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel src/index.js --out-file lib/index.js"
   },
   "repository": {
     "type": "git",
