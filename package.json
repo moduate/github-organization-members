@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "build:commonjs": "babel src/index.js --out-file lib/index.js",
+    "build:bundle": "webpack"
   },
   "repository": {
     "type": "git",
