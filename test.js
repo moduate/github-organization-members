@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const gom = require('.');
+const gom = require('./src');
 
 const BASE_URL = "https://api.github.com";
 
