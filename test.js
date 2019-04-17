@@ -32,13 +32,13 @@ describe('Calling getOrganisation', () => {
 
 describe('Get Members', () => {
   test('Passing Moduate as an argument, returns at least one public member', async () => {
-    const data = await gom.getPublicUsersFromOrg(ORGANIZATION_NAME);
-    gom.getPublicUsersFromOrg(orgName, (error, members) => {
+    const members = await gom.getPublicUsersFromOrg(ORGANIZATION_NAME, (error, response) => {
       if(error) {
-        console.log(error);
+        throw error;
       }
-      console.log(members);
+      return response;
     });
-    expect(data).toHaveLength()
+    console.log(members)
+    expect(members).not.toHaveLength(0);
   });
 })
