@@ -38,7 +38,6 @@ describe('Get Members', () => {
       }
       return response;
     });
-    console.log(members)
     expect(members).not.toHaveLength(0);
   });
 })
