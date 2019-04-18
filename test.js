@@ -3,15 +3,16 @@ const gom = require('./src');
 
 const BASE_URL = "https://api.github.com";
 const ORGANIZATION_NAME = "Moduate";
+const ORGANIZATION_REQUIRED_ERROR_MESSAGE = "An organization is required";
 
 describe('Calling getOrganization', () => {
-  test('passing an empty string as argument, fails with "Not Found"', async () => {
+  test(`passing an empty string as argument, fails with ${ORGANIZATION_REQUIRED_ERROR_MESSAGE}`, async () => {
     const data = await gom.getOrganization("");
-    expect(data.message).toBe("Not Found");
+    expect(data.message).toBe(ORGANIZATION_REQUIRED_ERROR_MESSAGE);
   });
-  test('passing no argument, fails with "Not Found"', async () => {
+  test(`passing no argument, fails with ${ORGANIZATION_REQUIRED_ERROR_MESSAGE}`, async () => {
     const data = await gom.getOrganization();
-    expect(data.message).toBe("Not Found");
+    expect(data.message).toBe(ORGANIZATION_REQUIRED_ERROR_MESSAGE);
   });
   test('passing a company that does not exist as an argument, fails with "Not Found"', async () => {
     const data = await gom.getOrganization("#@%@#%");
