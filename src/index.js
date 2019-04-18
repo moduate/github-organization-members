@@ -14,6 +14,9 @@ exports.getOrganization = exports.getOrganisation;
 
 exports.getPublicUsersFromOrg = async (orgName, cb) => {
   const org = await exports.getOrganisation(orgName);
+  if(!org.id) {
+    return org;
+  }
   try {
     const publicMembersUrl = org.public_members_url.replace(/{.*}/g, '');
     return fetch(publicMembersUrl)
